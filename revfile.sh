@@ -3,7 +3,6 @@ if [ $# -ne 1 ]
 then
 	echo "syntax is <$0> [file name]"
 else
-	set -xv
 	cp $1 file
 	l=`cat file | wc -l` 
 	rm -f rfile
